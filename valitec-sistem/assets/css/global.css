@@ -1,0 +1,23 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #0a0f1f;
+color: #fff;
+}
+
+
+.card {
+background: #141c2f;
+padding: 20px;
+border-radius: 12px;
+box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+
+.btn {
+padding: 10px 14px;
+border-radius: 8px;
+background: #0066ff;
+text-decoration: none;
+color: #fff;
+}

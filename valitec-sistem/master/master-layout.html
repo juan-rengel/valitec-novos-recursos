@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MASTER — Layout Base</title>
+  <link rel="stylesheet" href="../assets/css/master.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">VALITEC<br><span>MASTER</span></div>
+    <nav>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="lojas.html">Lojas</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="rebaixados.html">Rebaixados</a>
+      <a href="graficos.html">Gráficos</a>
+      <a href="relatorios.html">Relatórios</a>
+    </nav>
+  </aside>
+
+  <header class="header">
+    <h1 id="pageTitle">Dashboard Master</h1>
+    <div class="user-info">
+      <span id="userName">Carregando...</span>
+      <button class="logout" onclick="logout()">Sair</button>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="grid-cards">
+      <div class="card">TOTAL DE LOJAS</div>
+      <div class="card">PRODUTOS CADASTRADOS</div>
+      <div class="card">PRODUTOS REBAIXADOS</div>
+      <div class="card">MOVIMENTAÇÕES</div>
+    </section>
+  </main>
+
+  <script src="../assets/js/components/sidebar.js"></script>
+  <script src="../assets/js/components/navbar.js"></script>
+  <script src="../assets/js/auth.js"></script>
+</body>
+</html>
