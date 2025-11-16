@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MASTER — Layout Base</title>
   <link rel="stylesheet" href="../assets/css/master.css" />
+
 </head>
 <body>
+
   <aside class="sidebar">
     <div class="logo">VALITEC<br><span>MASTER</span></div>
     <nav>
@@ -20,12 +22,17 @@
   </aside>
 
   <header class="header">
-    <h1 id="pageTitle">Dashboard Master</h1>
-    <div class="user-info">
-      <span id="userName">Carregando...</span>
-      <button class="logout" onclick="logout()">Sair</button>
-    </div>
-  </header>
+  <button id="toggleSidebar" class="menu-btn" aria-label="Abrir menu">☰</button>
+
+  <h1 id="pageTitle">Dashboard Master</h1>
+
+  <div class="user-info">
+    <span id="userName">Carregando...</span>
+    <button id="toggleTheme" class="menu-btn" aria-label="Alterar tema">🌗</button>
+    <button id="logoutMaster" class="logout">Sair</button>
+  </div>
+</header>
+
 
   <main class="content">
     <section class="grid-cards">
@@ -36,8 +43,11 @@
     </section>
   </main>
 
-  <script src="../assets/js/components/sidebar.js"></script>
-  <script src="../assets/js/components/navbar.js"></script>
-  <script src="../assets/js/auth.js"></script>
+<script src="../assets/js/auth.js"></script>
+<script src="../assets/js/components/sidebar.js"></script>
+<script src="../assets/js/components/navbar.js"></script>
+<script src="../assets/js/components/master.js"></script>
+
+
 </body>
 </html>
